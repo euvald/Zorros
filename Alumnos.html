@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumnos</title>
+    <link rel="stylesheet" href="Estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Alumnos</h1>
+    </header>
+
+    <main>
+        <form id="consultaAlumno">
+            <label for="control">Ingresa el número de control del alumno:</label>
+            <input type="text" id="control" name="control">
+            <button type="button" onclick="BuscarAlumno()">Buscar</button>
+        </form>
+
+        <div id="resultado"></div>
+		<button type="button" onclick="window.location.href='Index.html'">Menu principal</button>
+    </main>
+
+    <script>
+        function BuscarAlumno() {
+            const controlIngresado = document.getElementById('control').value;
+            const xhttp = new XMLHttpRequest();
+            xhttp.open("GET", "datos1.xml", true);
+            xhttp.onreadystatechange = function () {
+                if (this.readyState === 4 && this.status === 200) {
+                    const xml = this.responseXML;
+                    const alumnos = xml.getElementsByTagName("alumno");
+                    let encontrado = false;
+                    for (let i = 0; i < alumnos.length; i++) {
+                        const control = alumnos[i].getElementsByTagName("noControl")[0].textContent;
+                        if (control === controlIngresado) {
+                            const nombre = alumnos[i].getElementsByTagName("nombre")[0].textContent;
+                            const apellidos = alumnos[i].getElementsByTagName("apellidos")[0].textContent;
+                            const direccion = alumnos[i].getElementsByTagName("direccion")[0].textContent;
+                            const semestre = alumnos[i].getElementsByTagName("semestre")[0].textContent;
+                            const correo = alumnos[i].getElementsByTagName("correo")[0].textContent;
+                            const telefono = alumnos[i].getElementsByTagName("telefono")[0].textContent;
+                            const carrera = alumnos[i].getElementsByTagName("carrera")[0].textContent;
+                            document.getElementById('resultado').innerHTML = `
+                                <p><strong>Nombre:</strong> ${nombre}</p>
+                                <p><strong>Apellidos:</strong> ${apellidos}</p>
+                                <p><strong>Direccion:</strong> ${direccion}</p>
+                                <p><strong>Correo:</strong> ${correo}</p>
+                                <p><strong>Telefono:</strong> ${telefono}</p>
+                                <p><strong>Carrera:</strong> ${carrera}</p>`;
+                            encontrado = true;
+                            break;
+                        }
+                    }
+                    if (!encontrado) {
+                        document.getElementById('resultado').innerHTML = "<p>Alumno no exitente.</p>";
+                    }
+                }
+            };
+            xhttp.send();
+        }
+    </script>
+    <footer>
+        <p>&copy; Sistema Escolar 2024, hecho por Emilio Aguas y Jose Euvaldo</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<escuela xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Alumnos.xsd">
+        <alumno>
+            <noControl>21141286</noControl>
+            <nombre>Jose Euvaldo</nombre>
+            <apellidos>Zarazua Garcia</apellidos>
+            <direccion>Calle Falsa 123</direccion>
+            <semestre>7</semestre>
+            <correo>l21141286@queretaro.tecnm.mx</correo>
+            <telefono>442-122-1333</telefono>
+            <carrera>Ingenieria en sistemas computacionales</carrera>
+        </alumno>
+        <alumno>
+            <noControl>21141287</noControl>
+            <nombre>Luis Gabriel</nombre>
+            <apellidos>Guillen Mendoza</apellidos>
+            <direccion>Avenida Siempre Viva 742</direccion>
+            <semestre>3</semestre>
+            <correo>l21141287@queretaro.tecnm.mx</correo>
+            <telefono>442-122-1333</telefono>
+            <carrera>Ingenieria en sistemas computacionales</carrera>
+        </alumno>
+        <alumno>
+            <noControl>21141288</noControl>
+            <nombre>Angel</nombre>
+            <apellidos>Vigil Velazquez</apellidos>
+            <direccion>Avenida el platano</direccion>
+            <semestre>9</semestre>
+            <correo>l21141288@queretaro.tecnm.mx</correo>
+            <telefono>442-122-1365</telefono>
+            <carrera>Ingenieria en sistemas computacionales</carrera>
+        </alumno>
+        <alumno>
+            <noControl>21141289</noControl>
+            <nombre>Cesar</nombre>
+            <apellidos>Guerrero Velazquez</apellidos>
+            <direccion>Plaza Mayor 789</direccion>
+            <semestre>7</semestre>
+            <correo>l21141289@queretaro.tecnm.mx</correo>
+            <telefono>442-122-1365</telefono>
+            <carrera>Ingenieria en sistemas computacionales</carrera>
+        </alumno>
+        <alumno>
+            <noControl>21141290</noControl>
+            <nombre>Emilio jr</nombre>
+            <apellidos>Aguas Mendoza</apellidos>
+            <direccion>Calle Luna 101</direccion>
+            <semestre>7</semestre>
+            <correo>l21141290@queretaro.tecnm.mx</correo>
+            <telefono>442-120-1321</telefono>
+            <carrera>Ingenieria en sistemas computacionales</carrera>
+        </alumno>
+        <alumno>
+            <noControl>21141291</noControl>
+            <nombre>Jocelyn </nombre>
+            <apellidos>Jiménez  Torres</apellidos>
+            <direccion>Avenida Sol 202</direccion>
+            <semestre>7</semestre>
+            <correo>l21141291@queretaro.tecnm.mx</correo>
+            <telefono>442-111-1369</telefono>
+            <carrera>Ingenieria en sistemas computacionales</carrera>
+        </alumno>
+        <alumno>
+            <noControl>21141292</noControl>
+            <nombre>Diego</nombre>
+            <apellidos>Ramírez Pérez</apellidos>
+            <direccion>Calle Estrella 303</direccion>
+            <semestre>1</semestre>
+            <correo>l21141292@queretaro.tecnm.mx</correo>
+            <telefono>442-111-1432</telefono>
+            <carrera>Ingenieria en sistemas computacionales</carrera>
+        </alumno>
+        <alumno>
+            <noControl>21141293</noControl>
+            <nombre>Elena</nombre>
+            <apellidos>Vargas López</apellidos>
+            <direccion>Plaza Luna 404</direccion>
+            <semestre>8</semestre>
+            <correo>l21141293@queretaro.tecnm.mx</correo>
+            <telefono>442-111-1369</telefono>
+            <carrera>Ingenieria industrial</carrera>
+        </alumno>
+        <alumno>
+            <noControl>21141294</noControl>
+            <nombre>Fernando</nombre>
+            <apellidos>Castro García</apellidos>
+            <direccion>Avenida Estrella 505</direccion>
+            <semestre>9</semestre>
+            <correo>l21141294@queretaro.tecnm.mx</correo>
+            <telefono>442-111-0012</telefono>
+            <carrera>Ingenieria industrial</carrera>
+        </alumno>
+        <alumno>
+            <noControl>21141295</noControl>
+            <nombre>Isabel</nombre>
+            <apellidos>Morales Díaz</apellidos>
+            <direccion>Calle Mayor 606</direccion>
+            <semestre>10</semestre>
+            <correo>l21141294@queretaro.tecnm.mx</correo>
+            <telefono>555-8765-121</telefono>
+            <carrera>Ingenieria industrial</carrera>
+        </alumno>
+</escuela>
